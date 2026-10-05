@@ -1,0 +1,33 @@
+---
+title: Lab access
+description: How to prepare and verify an isolated training environment without exposing team or personal systems.
+published: true
+---
+
+Use a dedicated virtual machine or container environment for untrusted artifacts. Do not analyze challenge files directly on a personal or production workstation.
+
+## Baseline requirements
+
+- Current 64-bit Linux virtual machine with snapshots enabled.
+- At least 4 CPU cores, 8 GB RAM, and 60 GB free storage when available.
+- Host-to-guest clipboard and shared folders disabled by default.
+- NAT networking by default; host-only networking for intentionally local labs.
+- Full-disk encryption on the host and a password manager for team accounts.
+
+## Setup sequence
+
+1. Create the base virtual machine from a verified image.
+2. Apply operating system updates.
+3. Install only the required [core tooling](/docs/infrastructure/tooling).
+4. Create an unprivileged analysis user.
+5. Take a clean snapshot.
+6. Test network isolation and DNS behavior.
+7. Create a per-event snapshot before importing artifacts.
+
+## Artifact handling
+
+Hash files before opening them. Keep originals read-only and analyze copies. Do not upload challenge artifacts to public malware scanners or third-party services unless event rules explicitly permit it.
+
+## Reset conditions
+
+Revert or rebuild the environment after executing unknown persistence mechanisms, kernel exploits, destructive samples, or any artifact that changes the trust state of the machine.

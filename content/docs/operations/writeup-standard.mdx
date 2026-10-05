@@ -1,0 +1,44 @@
+---
+title: Write-up standard
+description: The required structure for durable, reproducible challenge documentation.
+published: true
+---
+
+A write-up should let another teammate reproduce the solve and recognize the same pattern in a different challenge.
+
+## Required structure
+
+1. **Summary** — category, difficulty, core technique, and result.
+2. **Challenge** — prompt, provided artifacts, services, and constraints.
+3. **Environment** — operating system, architecture, runtime, tool versions, and hashes.
+4. **Analysis** — observations, model, evidence, and important dead ends.
+5. **Solution** — the complete path in the order it was validated.
+6. **Solver** — clean code or commands with named values and usage instructions.
+7. **Lessons** — reusable indicators, techniques, and improvements.
+
+## Reproducibility checklist
+
+- Start from the original artifact or a documented hash.
+- Include all nonstandard dependencies.
+- Remove absolute local paths and personal tokens.
+- Test the final solver in a clean environment.
+- Explain unexplained constants and offsets.
+- Redact flags, credentials, and protected event material.
+
+## Naming
+
+Use a stable folder structure:
+
+```text
+event-year/
+  category/
+    challenge-name/
+      README.md
+      artifacts/
+      solve/
+      evidence/
+```
+
+## Tone
+
+State what happened and why. Keep uncertainty visible, distinguish facts from hypotheses, and credit every contributor.

@@ -1,0 +1,13 @@
+allowBuilds:
+  '@parcel/watcher': true
+  '@prisma/client': false
+  '@prisma/engines': false
+  core-js: false
+  esbuild: true
+  fast-folder-size: true
+  msw: false
+  prisma: false
+  protobufjs: false
+  puppeteer: false
+  sharp: true
+  unrs-resolver: true

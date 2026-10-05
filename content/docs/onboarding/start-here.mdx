@@ -1,0 +1,44 @@
+---
+title: Start here
+description: The onboarding checklist for new ECSC Albania team members and candidates.
+published: true
+---
+
+This checklist gets a new member from invitation to a safe, repeatable training setup.
+
+## First day checklist
+
+- Read the [code of conduct](/docs/onboarding/code-of-conduct).
+- Confirm your display name and contact details in the team dashboard.
+- Join the approved communication channels with the same recognizable identity.
+- Choose one primary category and one secondary category.
+- Prepare a dedicated virtual machine through the [lab access guide](/docs/infrastructure/lab-access).
+- Install the [core tooling](/docs/infrastructure/tooling) for your primary track.
+- Complete one baseline challenge and publish a short write-up.
+
+## Training rhythm
+
+Use a simple weekly loop:
+
+1. Pick one clearly scoped skill.
+2. Study the underlying concept before searching for a payload.
+3. Solve one or more challenges that exercise the skill.
+4. Write down the commands, failed assumptions, and final reasoning.
+5. Explain the solution to another teammate.
+
+## Ask for help well
+
+When blocked, share enough context for another member to reproduce your state:
+
+```text title="Blocker update"
+Challenge: heap-notes
+Goal: control the forward pointer after free
+Confirmed: glibc 2.35, PIE + NX, no UAF crash
+Tried: tcache poisoning with safe-linking reversal
+Need: second pair of eyes on the leak primitive
+Artifacts: /team/challenges/heap-notes/member-name/
+```
+
+## Safety boundary
+
+Use team methods only in authorized labs, competitions, and systems where you have explicit permission. If scope is unclear, stop and ask a coach.

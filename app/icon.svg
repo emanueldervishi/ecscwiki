@@ -1,0 +1,13 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<title>ECSC Albania</title>
+	<defs>
+		<linearGradient id="ecsc-icon" x1="42" y1="24" x2="220" y2="232" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#ef4444" />
+			<stop offset="0.55" stop-color="#b91c1c" />
+			<stop offset="1" stop-color="#18181b" />
+		</linearGradient>
+	</defs>
+	<rect width="256" height="256" rx="128" fill="url(#ecsc-icon)" />
+	<path d="M66 82L114 128L66 174" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+	<path d="M126 174H192" stroke="white" stroke-width="20" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,40 @@
+---
+title: Communication protocol
+description: A low-noise protocol for claiming challenges, reporting progress, requesting help, and handing off work.
+published: true
+---
+
+Competition communication should reduce duplicated work and make expertise easy to route.
+
+## Challenge states
+
+Use one of four states: **unclaimed**, **active**, **blocked**, or **solved**. A challenge may have one primary owner and named collaborators.
+
+## Claim format
+
+```text
+[ACTIVE] web / 300 / paper-gateway
+Owner: member-name
+Initial read: document converter with authenticated upload
+Next update: 20 minutes
+```
+
+## Progress update
+
+Post when the model changes, a real primitive is confirmed, or help is needed. Avoid streams of unverified guesses.
+
+```text
+[BLOCKED] paper-gateway
+Confirmed: HTML reaches the PDF renderer; local file URLs are rejected
+Tried: redirects, alternate schemes, malformed hosts
+Need: SSRF or renderer specialist
+Artifacts: challenge folder / notes.md
+```
+
+## Handoff standard
+
+A handoff must include the goal, confirmed facts, current hypothesis, failed approaches, exact files, and the next experiment. Close local listeners and remove temporary credentials before handing over a machine or session.
+
+## Solved state
+
+Announce the solve, confirm the scoreboard accepted it, save the final artifact, and identify who will produce the write-up.
